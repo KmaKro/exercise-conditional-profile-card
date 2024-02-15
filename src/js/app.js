@@ -37,8 +37,21 @@ function render(variables = {}) {
   variables.role = variables.role === null ? "Role" : variables.role;
   variables.city = variables.city === null ? "City" : variables.city;
 
-  if (variables.country == null) {
+  if (variables.country === null) {
     variables.country = "Country";
+  }
+
+  if (variables.twitter === null) {
+    variables.twitter = "";
+  }
+  if (variables.github === null) {
+    variables.github = "";
+  }
+  if (variables.linkedin === null) {
+    variables.linkedin = "";
+  }
+  if (variables.instagram === null) {
+    variables.instagram = "";
   }
 
   // reset the website body with the new html output
